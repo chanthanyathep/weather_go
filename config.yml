@@ -1,0 +1,10 @@
+app:
+ port: ":8001"
+
+db:
+ driver: "mysql"
+ host: "localhost"
+ port: 3307
+ username: prior
+ password: 1234
+ database: "db"

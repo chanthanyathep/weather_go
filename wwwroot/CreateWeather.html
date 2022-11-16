@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripe.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="CreateWeather.html" style="background-color:#3CB371">NewWeather</a>
+        <a href="" onclick="window.location.reload();" class="right"><i class="fa fa-refresh fa-spin" style="font-size:18.5px;color:white;padding:0px;margin:0px"></i></a>
+    </div>
+
+    <div class="row1">
+        <table>
+            <tr>
+                <center>
+                    <h3> <label for="number">AddWeather</label> </h3>
+                </center>
+            </tr>
+            <td><label for="number">Date:</label></td>
+            <td><input type="date" id="Date"></td>
+            <tr>
+                <td> <label for="number">Weather:</label></td>
+                <td><select id="Weather">
+                        <option>partly rain</option>
+                        <option>rain</option>
+                        <option>partly rain</option>
+                        <option>cloudy</option>
+                        <option>clear sky</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td> <label for="number">Sunrise:</label></td>
+                <td> <input type="time" id="Sunrise"></td>
+            </tr>
+            <tr>
+                <td> <label for="number">Sunset:</label></td>
+                <td> <input type="time" id="Sunset"></td>
+
+            </tr>
+            <tr>
+                <td> <label for="number">Wind:</label></td>
+                <td> <input id="Wind" type=number step=0.1 /></td>
+            </tr>
+            <tr>
+                <td> <label for="number">Temp(c):</label></td>
+                <td><input id="Temp" type=number step=0.1 /></td>
+            </tr>
+        </table>
+        <button onclick="newWeather()">Submit</button>
+
+    </div>
+
+    <footer>
+        <p>weather</p>
+    </footer>
+
+</body>
+
+
+</html>
